@@ -4,5 +4,22 @@ Mostar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
+var a;
+var b;
+var resultado;
+
+a = document.getElementById("numeroUno").value;
+
+a = parseInt(a);
+
+b = document.getElementById("numeroDos").value;
+
+b = parseInt(b);
+
+resultado = a + b
+
+alert("La suma es " + resultado);
+
+
 }
 
