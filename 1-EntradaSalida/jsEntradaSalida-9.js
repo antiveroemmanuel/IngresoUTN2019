@@ -6,14 +6,21 @@ function MostrarAumento()
 {
 var sueldo;
 var resultado;
+var aumento;
+
 
 sueldo = document.getElementById("sueldo").value;
 
 sueldo = parseInt(sueldo);
 
-resultado = sueldo + 10%
+resultado =  sueldo + (sueldo * 10)/ 100;
 
-document.getElementById("resultado").value;
+aumento = (sueldo*10)/100;
 
+alert(aumento);
+
+document.getElementById("resultado").value = resultado;
+
+//la funcion .tofix limitara los decimales que querramos en la funcion
 	
 }

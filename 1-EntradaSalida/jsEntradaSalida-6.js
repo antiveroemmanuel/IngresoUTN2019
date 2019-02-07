@@ -8,6 +8,7 @@ var a;
 var b;
 var resultado;
 
+
 a = document.getElementById("numeroUno").value;
 
 a = parseInt(a);
@@ -19,6 +20,8 @@ b = parseInt(b);
 resultado = a + b
 
 alert("La suma es " + resultado);
+
+
 
 
 }
