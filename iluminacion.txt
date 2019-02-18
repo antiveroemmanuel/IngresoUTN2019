@@ -1,0 +1,73 @@
+function CalcularPrecio() {
+
+    var cantidad = parseInt(document.getElementById("Cantidad").value);
+    var marca = document.getElementById("Marca").value;
+    var descuento;
+    var precio = 35;
+    var precioConDescuento;
+    var importeFinal;
+    var mensaje; 
+    var iibb;
+    var flag = false;
+
+    if (cantidad >= 6) {
+        descuento = precio * 50 / 100;
+    }
+    else if (cantidad == 5) {
+
+        if (marca == "ArgentinaLuz") {
+            descuento = precio * 40 / 100;
+        }
+        else {
+            descuento = precio * 30 / 100;
+        }
+
+    }
+    else if (cantidad == 4) {
+
+        if (marca == "ArgentinaLuz" || marca == "FelipeLamparas") {
+            descuento = precio * 25 / 100;
+        }
+        else {
+            descuento = precio * 20 / 100;
+        }
+
+
+    }
+    else if (cantidad == 3) {
+
+        if (marca == "ArgentinaLuz") {
+            descuento = precio * 15 / 100;
+        }
+        else if (marca == "FelipeLamparas") {
+            descuento = precio * 10 / 100;
+        }
+        else {
+            descuento = precio * 5 / 100;
+        }
+
+    }
+    else {
+        descuento = 0;
+    }
+    // EN ESTE PUNTO YA SE CUAL ES EL DESCUENTO
+
+    precioConDescuento = precio - descuento;
+    importeFinal = cantidad * precioConDescuento;
+
+    if (importeFinal > 120) {
+
+        iibb = importeFinal * 10 / 100;
+
+        importeFinal = importeFinal + iibb;
+        flag = true;
+    }
+    document.getElementById("precioDescuento").value = precioConDescuento;
+
+    mensaje = "Importe final $" + importeFinal;
+
+    if (flag ) {
+        mensaje = mensaje + " IIBB usted pago $ " + iibb;
+    }
+    alert(mensaje);
+}
