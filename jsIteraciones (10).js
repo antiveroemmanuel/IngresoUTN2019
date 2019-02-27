@@ -77,7 +77,11 @@ document.write("9-Diferencias entre positivos y negativos: " + diferencia + "<br
 
 
 
+//regla de las repetitivas
 
+// do while ----- cuando el codigo se debe ejecutar por lo menos 1 vez
+//for ----- cuando se de antemano la cantidad de repeticiones
+//while ------ para el resto de los casos
 
 
 
