@@ -30,59 +30,34 @@ function Mostrar()
 
      }
 
-     if (numero % 2 == 1) 
+     if (numero % 2 == 1) {
      contadorimpares++;
-else {
+     }else {
 contadorpares++;
+     }
 
+
+if(numero < minimo || flag == 0){
+
+minimo = numero
+flag = 1 
 }
-
-if(numero < minimo || flag == 0){}
-
-minimo = numerofalg = 1 }
-
 contador++;
 
-         seguir = confirm ("Quiere continuar?: ");
-    }while (seguir);
+
+         seguir = confirm ("Quiere continuar?: ")
+        
+ } while (seguir);
 
     promedio = acumulador / contador
 
-    document.write("a)la cantidad de numeros pares : "  + contadorpares + "<br>"
-    document.write("a)la cantidad de numeros impares : "  + contadorimpares + "<br>"
-    document.write("b)el promedio de todos los numeros ingresados : "  + promedio + "<br>"
-    document.write("c)la cantidad de numeros pares : " 
-    document.write("d)numero maximo: "  + maximo + "<br>"
-    document.write("d)numero minimo  : " + minimo + "<br>" 
+document.write("(a)la cantidad de numeros pares : "  + contadorpares + "<br>");
+document.write("(a)la cantidad de numeros impares : "  + contadorimpares + "<br>");
+document.write("(b)el promedio de todos los numeros ingresados : "  + promedio + "<br>");
+document.write("(c)la suma de todos los numeros : "  + acumulador + "<br>");
+document.write("(d)numero maximo: "  + maximo + "<br>");
+document.write("(d)numero minimo  : " + minimo + "<br>");
   
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
 //FIN DE LA FUNCION
